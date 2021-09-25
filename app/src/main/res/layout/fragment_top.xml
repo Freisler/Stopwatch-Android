@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDD"
+    tools:context=".Controller.FragmentStopwatch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="25sp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeStepGranularity="2sp"
+            android:text="00:00.00"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btn_lap"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_lap_selector" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btn_start_stop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/btn_start_selector" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btn_reset"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/btn_stop_selector" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
